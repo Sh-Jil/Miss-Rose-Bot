@@ -20,7 +20,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 Hey there! My name is *{}*, I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
 
-Join my [news channel](https://t.me/ProIndians) to get information on all the latest updates.
+Join my [Cinema Pranthanmarr](https://t.me/cinemapranthanmaar) to get information on all the latest updates.
 """
 
 HELP_STRINGS = """
@@ -34,7 +34,7 @@ I have lots of handy features, such as flood control, a warning system, a note k
 
 {}
 All commands can be used with the following: / !
-""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "If you have any bugs or questions on how to use me, have a look at my [Group](https://t.me/ProHelpDesk), or head to @ProIndians.")
+""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else " Have a look at my [Group](https://t.me/cinemapranthanmaar), or head to @cinemapranthanmaar.")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 It took lots of work for [my creator](t.me/SonOfLars) to get me to where I am now, and every donation helps \
@@ -135,7 +135,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                                     reply_markup=InlineKeyboardMarkup(
                                         [[InlineKeyboardButton(text="Add me to your chat!", url="t.me/{}?startgroup=true".format(bot.username))]]))
     else:
-        update.effective_message.reply_text("Hello all Join @ProIndians.")
+        update.effective_message.reply_text("Hello all Join @cinemapranthanmaar.")
 
 
 # for test purposes
